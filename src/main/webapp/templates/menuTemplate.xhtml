@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>Nombre de la aplicación</title>
+	<h:outputStylesheet library="css" name="style.css" />
+</h:head>
+<h:body>
+	<h:form id="frmHeader">
+		<div id="imgApplicationLogo">
+			<div id="applicationName">Nombre de la aplicación</div>
+		</div>
+		<div id="headerLinks">
+			<h:commandLink value="Nombre de usuario" />
+			<br />
+			<h:commandLink value="Cerrar sesión" styleClass="closeSession"/>
+		</div>
+		<div id="headerSection" class="header" />
+		<div id="menuSection" class="menu">
+			<h:commandLink value="Vista general" styleClass="optionMenu" />
+			<h:commandLink value="Pagos" styleClass="optionMenu" />
+			<h:commandLink value="Locales" styleClass="optionMenu" />
+			<h:commandLink value="Reportes" styleClass="optionMenu" />
+		</div>
+	</h:form>
+	<div id="content">
+		<ui:insert name="content">
+			Content
+		</ui:insert>
+	</div>
+</h:body>
+</html>

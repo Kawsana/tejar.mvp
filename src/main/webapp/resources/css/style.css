@@ -1,6 +1,11 @@
+body {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+
 .header {
 	border-bottom: 2px solid #79C9EC;
-	height: 120px;
+	height: 108px;
 }
 
 .txtBox-login {
@@ -13,7 +18,7 @@
 }
 
 #imgLogoApp {
-	background-image: url("#{resource['images/logoAplication.png']}");
+	background-image: url("#{resource['images/logoApplication.png']}");
 	float: left;
 	height: 227px;
 	margin-left: 200px;
@@ -30,12 +35,58 @@
 	width: 112px;
 }
 
+#imgApplicationLogo {
+	background-image: url("#{resource['images/logoApplicationSmall.png']}");
+	float: left;
+    height: 70px;
+    margin-left: 70px;
+    margin-top: 15px;
+    width: 88px;
+}
+
 #campanyName {
 	float: left;
 	height: 20px;
 	margin-left: 130px;
 	margin-top: 25px;
 	width: 85px;
+}
+
+#applicationName {
+    margin-left: 100px;
+    margin-top: 25px;
+    width: 195px;
+}
+
+#headerLinks {
+    float: right;
+    font-size: 16px;
+    margin-right: 60px;
+    margin-top: 25px;
+}
+
+#content {
+	float: right;
+	height: 35em;
+	width: 80%;
+}
+
+.menu {
+	float: left;
+    padding-bottom: 20%;
+    padding-left: 55px;
+    padding-top: 11%;
+    width: 15%;
+}
+
+.closeSession {
+	font-size: 15px;
+	float: right;
+}
+
+.optionMenu {
+	display: block;
+	margin: 2px;
 }
 
 .panel-login {
